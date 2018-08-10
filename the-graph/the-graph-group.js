@@ -66,19 +66,14 @@ module.exports.register = function (context) {
       if (event.gesture) {
         event = event.gesture.srcEvent; // unpack hammer.js gesture event 
       }
-      var x = event.x || event.clientX || 0;
-      var y = event.y || event.clientY || 0;
-      if (event.touches && event.touches.length) {
-        x = event.touches[0].clientX;
-        y = event.touches[0].clientY;
-      }
+      var pos = TheGraph.getInputPosition(event);
 
       // App.showContext
       this.props.showContext({
         element: this,
         type: (this.props.isSelectionGroup ? "selection" : "group"),
-        x: x,
-        y: y,
+        x: pos.x,
+        y: pos.y,
         graph: this.props.graph,
         itemKey: this.props.label,
         item: this.props.item

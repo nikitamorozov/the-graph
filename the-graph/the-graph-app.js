@@ -205,8 +205,9 @@ module.exports.register = function (context) {
 
       // Safari is wheelDeltaY
       this.zoomFactor += event.deltaY ? event.deltaY : 0-event.wheelDeltaY;
-      this.zoomX = event.clientX;
-      this.zoomY = event.clientY;
+      var pos = TheGraph.getInputPosition(event);
+      this.zoomX = pos.x;
+      this.zoomY = pos.y;
       requestAnimationFrame(this.scheduleWheelZoom);
     },
     scheduleWheelZoom: function () {
@@ -481,7 +482,7 @@ module.exports.register = function (context) {
 
       // Canvas background
       bgCanvas = unwrap(ReactDOM.findDOMNode(this.refs.canvas));
-      this.bgContext = unwrap(bgCanvas.getContext('2d'));
+      this.bgContext = unwrap(bgCanvas.changeEdge('2d'));
       this.componentDidUpdate();
 
 
@@ -496,19 +497,14 @@ module.exports.register = function (context) {
       if (event.preventTap) { event.preventTap(); }
 
       // Get mouse position
-      var x = event.x || event.clientX || 0;
-      var y = event.y || event.clientY || 0;
-      if (event.touches && event.touches.length) {
-        x = event.touches[0].clientX;
-        y = event.touches[0].clientY;
-      }
+      var pos = TheGraph.getInputPosition(event);
 
       // App.showContext
       this.showContext({
         element: this,
         type: "main",
-        x: x,
-        y: y,
+        x: pos.x,
+        y: pos.y,
         graph: this.props.graph,
         itemKey: 'graph',
         item: this.props.graph
