@@ -112,7 +112,7 @@ TheGraph.render.register(g);
 
 module.exports = TheGraph;
 
-},{"./the-graph-editor/clipboard.js":28,"./the-graph-editor/menus.js":29,"./the-graph-nav/the-graph-nav.js":30,"./the-graph-thumb/the-graph-thumb.js":31,"./the-graph/SVGImage.js":32,"./the-graph/TextBG.js":33,"./the-graph/arcs.js":34,"./the-graph/factories.js":35,"./the-graph/font-awesome-unicode-map.js":36,"./the-graph/geometryutils":37,"./the-graph/inputPosition.js":39,"./the-graph/merge.js":40,"./the-graph/mixins.js":41,"./the-graph/render.js":42,"./the-graph/the-graph-app.js":43,"./the-graph/the-graph-autolayout.js":44,"./the-graph/the-graph-edge.js":45,"./the-graph/the-graph-graph.js":46,"./the-graph/the-graph-group.js":47,"./the-graph/the-graph-iip.js":48,"./the-graph/the-graph-library.js":49,"./the-graph/the-graph-menu.js":50,"./the-graph/the-graph-modalbg.js":51,"./the-graph/the-graph-node-menu-port.js":52,"./the-graph/the-graph-node-menu-ports.js":53,"./the-graph/the-graph-node-menu.js":54,"./the-graph/the-graph-node.js":55,"./the-graph/the-graph-port.js":56,"./the-graph/the-graph-tooltip.js":57,"ease-component":9,"fbp-graph":15}],2:[function(require,module,exports){
+},{"./the-graph-editor/clipboard.js":28,"./the-graph-editor/menus.js":29,"./the-graph-nav/the-graph-nav.js":30,"./the-graph-thumb/the-graph-thumb.js":31,"./the-graph/SVGImage.js":32,"./the-graph/TextBG.js":33,"./the-graph/arcs.js":34,"./the-graph/factories.js":35,"./the-graph/font-awesome-unicode-map.js":36,"./the-graph/geometryutils":37,"./the-graph/input-position.js":39,"./the-graph/merge.js":40,"./the-graph/mixins.js":41,"./the-graph/render.js":42,"./the-graph/the-graph-app.js":43,"./the-graph/the-graph-autolayout.js":44,"./the-graph/the-graph-edge.js":45,"./the-graph/the-graph-graph.js":46,"./the-graph/the-graph-group.js":47,"./the-graph/the-graph-iip.js":48,"./the-graph/the-graph-library.js":49,"./the-graph/the-graph-menu.js":50,"./the-graph/the-graph-modalbg.js":51,"./the-graph/the-graph-node-menu-port.js":52,"./the-graph/the-graph-node-menu-ports.js":53,"./the-graph/the-graph-node-menu.js":54,"./the-graph/the-graph-node.js":55,"./the-graph/the-graph-port.js":56,"./the-graph/the-graph-tooltip.js":57,"ease-component":9,"fbp-graph":15}],2:[function(require,module,exports){
 'use strict'
 
 exports.byteLength = byteLength
@@ -14367,7 +14367,7 @@ function getDefaultMenus(editor) {
         action: function (graph, itemKey, item) {
           Clipboard.copy(graph, item.nodes);
         }
-      },getDefaultMenus
+      },
       e4: pasteMenu
     }
   };
@@ -16191,7 +16191,7 @@ module.exports = {
   Tooltip: Tooltip,
 };
 
-},{"./inputPosition.js":39,"react-dom":77}],42:[function(require,module,exports){
+},{"./input-position.js":39,"react-dom":77}],42:[function(require,module,exports){
 
 var React = require('react');
 var ReactDOM = require('react-dom');

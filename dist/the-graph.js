@@ -112,7 +112,7 @@ TheGraph.render.register(g);
 
 module.exports = TheGraph;
 
-},{"./the-graph-editor/clipboard.js":18,"./the-graph-editor/menus.js":19,"./the-graph-nav/the-graph-nav.js":20,"./the-graph-thumb/the-graph-thumb.js":21,"./the-graph/SVGImage.js":22,"./the-graph/TextBG.js":23,"./the-graph/arcs.js":24,"./the-graph/factories.js":25,"./the-graph/font-awesome-unicode-map.js":26,"./the-graph/geometryutils":27,"./the-graph/inputPosition.js":29,"./the-graph/merge.js":30,"./the-graph/mixins.js":31,"./the-graph/render.js":32,"./the-graph/the-graph-app.js":33,"./the-graph/the-graph-autolayout.js":34,"./the-graph/the-graph-edge.js":35,"./the-graph/the-graph-graph.js":36,"./the-graph/the-graph-group.js":37,"./the-graph/the-graph-iip.js":38,"./the-graph/the-graph-library.js":39,"./the-graph/the-graph-menu.js":40,"./the-graph/the-graph-modalbg.js":41,"./the-graph/the-graph-node-menu-port.js":42,"./the-graph/the-graph-node-menu-ports.js":43,"./the-graph/the-graph-node-menu.js":44,"./the-graph/the-graph-node.js":45,"./the-graph/the-graph-port.js":46,"./the-graph/the-graph-tooltip.js":47,"ease-component":6,"fbp-graph":8}],2:[function(require,module,exports){
+},{"./the-graph-editor/clipboard.js":18,"./the-graph-editor/menus.js":19,"./the-graph-nav/the-graph-nav.js":20,"./the-graph-thumb/the-graph-thumb.js":21,"./the-graph/SVGImage.js":22,"./the-graph/TextBG.js":23,"./the-graph/arcs.js":24,"./the-graph/factories.js":25,"./the-graph/font-awesome-unicode-map.js":26,"./the-graph/geometryutils":27,"./the-graph/input-position.js":29,"./the-graph/merge.js":30,"./the-graph/mixins.js":31,"./the-graph/render.js":32,"./the-graph/the-graph-app.js":33,"./the-graph/the-graph-autolayout.js":34,"./the-graph/the-graph-edge.js":35,"./the-graph/the-graph-graph.js":36,"./the-graph/the-graph-group.js":37,"./the-graph/the-graph-iip.js":38,"./the-graph/the-graph-library.js":39,"./the-graph/the-graph-menu.js":40,"./the-graph/the-graph-modalbg.js":41,"./the-graph/the-graph-node-menu-port.js":42,"./the-graph/the-graph-node-menu-ports.js":43,"./the-graph/the-graph-node-menu.js":44,"./the-graph/the-graph-node.js":45,"./the-graph/the-graph-port.js":46,"./the-graph/the-graph-tooltip.js":47,"ease-component":6,"fbp-graph":8}],2:[function(require,module,exports){
 'use strict'
 
 exports.byteLength = byteLength
@@ -12198,7 +12198,7 @@ module.exports = {
   Tooltip: Tooltip,
 };
 
-},{"./inputPosition.js":29,"react-dom":"react-dom"}],32:[function(require,module,exports){
+},{"./input-position.js":29,"react-dom":"react-dom"}],32:[function(require,module,exports){
 
 var React = require('react');
 var ReactDOM = require('react-dom');
