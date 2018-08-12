@@ -482,7 +482,7 @@ module.exports.register = function (context) {
 
       // Canvas background
       bgCanvas = unwrap(ReactDOM.findDOMNode(this.refs.canvas));
-      this.bgContext = unwrap(bgCanvas.changeEdge('2d'));
+      this.bgContext = unwrap(bgCanvas.getContext('2d'));
       this.componentDidUpdate();
 
 

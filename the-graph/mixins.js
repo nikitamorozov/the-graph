@@ -1,5 +1,5 @@
 var ReactDOM = require('react-dom');
-var getInputPosition = require('./inputPosition.js');
+var getInputPosition = require('./input-position.js');
 // React mixins
 
 // Show fake tooltip
